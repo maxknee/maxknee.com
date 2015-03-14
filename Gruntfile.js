@@ -10,7 +10,18 @@ module.exports = function(grunt) {
 				'js/vendor/*.js',
 				'js/app/*.js'
 				],
-				dest: 'js/prod/maxknee.js'
+				dest: 'public/js/maxknee.js'
+			}
+		},
+		haml: {
+			dist: {
+				files: [{
+					expand: true,
+					cwd: 'haml',
+					src: ['*.haml'],
+					dest: 'public/html',
+					ext: '.html'
+				}]
 			}
 		},
 		uglify: {
@@ -19,7 +30,7 @@ module.exports = function(grunt) {
 			},
 			all: {
 				files: {
-					'js/prod/scripts.min.js' : ['<%= concat.all.dest %>']
+					'public/js/scripts.min.js' : ['<%= concat.all.dest %>']
 				}
 			}
 		},
@@ -42,6 +53,10 @@ module.exports = function(grunt) {
 			styles: {
 				files: ['scss/**'],
 				tasks: ['css-compile']
+			},
+			haml: {
+				files: ['haml/*.haml'],
+				tasks: ['haml']
 			}
 		},
 		bower: {
@@ -49,11 +64,13 @@ module.exports = function(grunt) {
 				dest: 'js/vendor'
 			}
 		},
-		clean: ['js/prod/*', 'css/*']
+		clean: ['public/js/*', 'public/css/*']
 	});
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 	grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.registerTask('default', ['bower', 'concat', 'uglify', 'compass']);
+	grunt.loadNpmTasks('grunt-contrib-haml');
+  grunt.registerTask('default', ['bower', 'concat', 'uglify', 'compass', 'haml']);
   grunt.registerTask('js-compile', ['concat', 'uglify']);
   grunt.registerTask('css-compile', ['compass']);
+  grunt.registerTask('watch', ['clean', 'uglify', 'compass', 'haml']);
 };
