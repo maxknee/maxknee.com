@@ -37,6 +37,7 @@ module.exports = function(grunt) {
 		compass: {
 			all: {
 				options: {
+					require: 'susy',
 					config: 'config/compass.rb'
 				}
 			}
@@ -72,5 +73,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['bower', 'concat', 'uglify', 'compass', 'haml']);
   grunt.registerTask('js-compile', ['concat', 'uglify']);
   grunt.registerTask('css-compile', ['compass']);
-  grunt.registerTask('watch', ['clean', 'uglify', 'compass', 'haml']);
+  //grunt.registerTask('watch', ['clean', 'uglify', 'compass', 'haml']);
 };
