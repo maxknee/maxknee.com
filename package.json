@@ -1,0 +1,19 @@
+{
+  "name": "maxknee.com",
+  "version": "0.0.1",
+  "author": "Max Knee",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "~9.0.3",
+    "node": "~0.0.0",
+    "jshint": "~2.6.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt": "latest",
+    "grunt-contrib-clean": "~0.5.0",    
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.5.1",
+    "matchdep": "~0.3.0",
+    "grunt-bower": "latest"
+  }
+}

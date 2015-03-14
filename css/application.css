@@ -1,0 +1,8 @@
+/* line 1, ../scss/pages/_home.scss */
+div {
+  display: block;
+  border: 2px solid green; }
+
+/* line 6, ../scss/pages/_home.scss */
+p {
+  font-size: 5rem; }

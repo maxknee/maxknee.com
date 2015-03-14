@@ -1,0 +1,20 @@
+{
+  "name": "maxknee",
+  "version": "0.0.1",
+  "authors": [
+    "Max Knee"
+  ],
+  "description": "website for max knee .com",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.2",
+    "breakpoint-sass": "~2.5.0"
+  }
+}
