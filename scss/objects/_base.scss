@@ -1,3 +1,23 @@
 // Setting up base styles
-@import "susy";
 
+@import "susy";
+@import "compass";
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+/* Susy Setup */
+
+$susy: (
+	columns: 12,
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position: outside,
+	column-width: 100px,
+	);
+
+/* Font Setup */
+
+$font-stack: Lato, sans-serif;
+$base-font-size: 10px;

@@ -1,8 +1,11 @@
-div {
-	display: block;
-	border: 2px solid green;
+.main {
+	@include container(12);
+	font-family: $font-stack;
+	font-size: 1.4rem;
+
+	p {
+		@include span(3 omega);
+		font-size: 1.2rem;
+	}
 }
 
-p {
-	font-size: 5rem;
-}

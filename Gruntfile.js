@@ -70,7 +70,7 @@ module.exports = function(grunt) {
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-haml');
-  grunt.registerTask('default', ['bower', 'concat', 'uglify', 'compass', 'haml']);
+  grunt.registerTask('default', ['bower', 'concat', 'uglify', 'compass', 'haml', 'watch']);
   grunt.registerTask('js-compile', ['concat', 'uglify']);
   grunt.registerTask('css-compile', ['compass']);
   //grunt.registerTask('watch', ['clean', 'uglify', 'compass', 'haml']);

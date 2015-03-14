@@ -1,8 +1,24 @@
-/* line 1, ../../scss/pages/_home.scss */
-div {
-  display: block;
-  border: 2px solid green; }
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+/* Susy Setup */
+/* Font Setup */
+/* line 1, ../../scss/objects/_typography.scss */
+h1 {
+  font-family: Lato, sans-serif; }
 
-/* line 6, ../../scss/pages/_home.scss */
-p {
-  font-size: 5rem; }
+/* line 1, ../../scss/pages/_home.scss */
+.main {
+  max-width: 1475px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Lato, sans-serif;
+  font-size: 1.4rem; }
+  /* line 12, ../../../../.rvm/gems/ruby-2.1.2/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  .main:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  /* line 6, ../../scss/pages/_home.scss */
+  .main p {
+    width: 23.72881%;
+    float: right;
+    font-size: 1.2rem; }
