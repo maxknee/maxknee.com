@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd: 'haml',
 					src: ['*.haml'],
-					dest: 'public/html',
+					dest: 'public/',
 					ext: '.html'
 				}]
 			}
