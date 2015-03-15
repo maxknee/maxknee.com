@@ -1,10 +1,26 @@
+.susy-container {
+	@include container;
+}
+
+#menu {
+	@include span(0.75);
+	border-right: 1px solid black;
+	padding-bottom: 10%;
+	
+	ul { @extend %list-reset;}
+	
+	li {
+		line-height: 1.5rem;
+	}
+}
+
 .main {
-	@include container(12);
-	font-family: $font-stack;
+	@include span(9);
 	font-size: 1.4rem;
+	margin-left: 10px;
 
 	p {
-		@include span(3 omega);
+		@include clearfix;
 		font-size: 1.2rem;
 	}
 }

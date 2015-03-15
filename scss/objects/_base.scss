@@ -19,5 +19,17 @@ $susy: (
 
 /* Font Setup */
 
-$font-stack: Lato, sans-serif;
+$font-stack: Lato, 'Open-Sans', sans-serif;
 $base-font-size: 10px;
+$base-line-height: 10px;
+$rhythm-unit: "rem";
+
+$base-font-family: $font-stack;
+$font-body:        $font-stack;
+
+@import "compass/support";  // Add Compass' IE and vendor prefix support variables.
+@import "compass/utilities/general/clearfix"; // Better than Drupal's clearfix.
+@import "compass/utilities/sprites"; // See http://compass-style.org/help/tutorials/spriting/
+@import "compass/css3";     // Use one CSS3 mixin instead of multiple vendor prefixes.
+@import "compass/css3/box-sizing"; // Use box-sizing
+@import "compass/typography/vertical_rhythm"; // Helps set up a vertical rhythm.
