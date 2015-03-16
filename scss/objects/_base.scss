@@ -27,6 +27,10 @@ $rhythm-unit: "rem";
 $base-font-family: $font-stack;
 $font-body:        $font-stack;
 
+// Colors
+
+$background-gray: 	rgba(126, 126, 126, 1.0);
+
 @import "compass/support";  // Add Compass' IE and vendor prefix support variables.
 @import "compass/utilities/general/clearfix"; // Better than Drupal's clearfix.
 @import "compass/utilities/sprites"; // See http://compass-style.org/help/tutorials/spriting/

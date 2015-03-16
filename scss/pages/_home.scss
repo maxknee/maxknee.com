@@ -1,5 +1,6 @@
 .susy-container {
 	@include container;
+	background-color: $background-gray;
 }
 
 #menu {
@@ -7,7 +8,9 @@
 	border-right: 1px solid black;
 	padding-bottom: 10%;
 	
-	ul { @extend %list-reset;}
+	ul { 
+		@extend %list-reset;
+	}
 	
 	li {
 		line-height: 1.5rem;

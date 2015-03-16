@@ -21,30 +21,31 @@ h1 {
   max-width: 1475px;
   max-width: 147.5rem;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-color: #7e7e7e; }
   /* line 12, ../../../../.rvm/gems/ruby-2.1.2/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
   .susy-container:after {
     content: " ";
     display: block;
     clear: both; }
 
-/* line 5, ../../scss/pages/_home.scss */
+/* line 6, ../../scss/pages/_home.scss */
 #menu {
   width: 4.66102%;
   float: left;
   border-right: 1px solid black;
   padding-bottom: 10%; }
-  /* line 12, ../../scss/pages/_home.scss */
+  /* line 15, ../../scss/pages/_home.scss */
   #menu li {
     line-height: 1.5rem; }
 
-/* line 17, ../../scss/pages/_home.scss */
+/* line 20, ../../scss/pages/_home.scss */
 .main {
   width: 74.57627%;
   float: left;
   font-size: 1.4rem;
   margin-left: 10px; }
-  /* line 22, ../../scss/pages/_home.scss */
+  /* line 25, ../../scss/pages/_home.scss */
   .main p {
     overflow: hidden;
     *zoom: 1;
@@ -57,3 +58,16 @@ html {
 /* line 5, ../../scss/objects/_elements.scss */
 p {
   margin: 0; }
+
+/* line 7, ../../scss/objects/_elements.scss */
+a {
+  text-decoration: none;
+  color: #fba32a;
+  cursor: pointer;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  /* line 12, ../../scss/objects/_elements.scss */
+  a:hover {
+    color: red; }
