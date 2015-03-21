@@ -22,6 +22,7 @@ h1 {
   max-width: 147.5rem;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
   background-color: #7e7e7e; }
   /* line 12, ../../../../.rvm/gems/ruby-2.1.2/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
   .susy-container:after {
@@ -29,23 +30,26 @@ h1 {
     display: block;
     clear: both; }
 
-/* line 6, ../../scss/pages/_home.scss */
+/* line 11, ../../scss/pages/_home.scss */
 #menu {
   width: 4.66102%;
   float: left;
   border-right: 1px solid black;
   padding-bottom: 10%; }
-  /* line 15, ../../scss/pages/_home.scss */
+  /* line 20, ../../scss/pages/_home.scss */
   #menu li {
     line-height: 1.5rem; }
+    /* line 23, ../../scss/pages/_home.scss */
+    #menu li a {
+      padding: 0 5px; }
 
-/* line 20, ../../scss/pages/_home.scss */
+/* line 29, ../../scss/pages/_home.scss */
 .main {
   width: 74.57627%;
   float: left;
   font-size: 1.4rem;
   margin-left: 10px; }
-  /* line 25, ../../scss/pages/_home.scss */
+  /* line 34, ../../scss/pages/_home.scss */
   .main p {
     overflow: hidden;
     *zoom: 1;

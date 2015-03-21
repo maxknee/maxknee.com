@@ -7,8 +7,7 @@ module.exports = function(grunt) {
 			},
 			all: {
 				src: [
-				'js/vendor/*.js',
-				'js/app/*.js'
+				'js/**/*.js'
 				],
 				dest: 'public/js/maxknee.js'
 			}
@@ -30,7 +29,7 @@ module.exports = function(grunt) {
 			},
 			all: {
 				files: {
-					'public/js/scripts.min.js' : ['<%= concat.all.dest %>']
+					'public/js/<%= pkg.name %>.min.js' : ['<%= concat.all.dest %>']
 				}
 			}
 		},
@@ -48,7 +47,7 @@ module.exports = function(grunt) {
 				nospawn: true
 			},
 			scripts: {
-				files: ['js/app/*.js'],
+				files: ['js/**/*.js'],
 				tasks: ['js-compile']
 			},
 			styles: {
@@ -69,6 +68,8 @@ module.exports = function(grunt) {
 	});
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 	grunt.loadNpmTasks('grunt-contrib-compass');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-haml');
   grunt.registerTask('default', ['bower', 'concat', 'uglify', 'compass', 'haml', 'watch']);
   grunt.registerTask('js-compile', ['concat', 'uglify']);

@@ -1,6 +1,11 @@
 .susy-container {
 	@include container;
+	overflow: hidden;
 	background-color: $background-gray;
+}
+
+header {
+
 }
 
 #menu {
@@ -14,6 +19,10 @@
 	
 	li {
 		line-height: 1.5rem;
+
+		a {
+			padding: 0 5px;
+		}
 	}
 }
 

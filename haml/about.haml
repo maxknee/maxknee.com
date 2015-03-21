@@ -1,0 +1,26 @@
+!!! 5
+%html
+	%head
+		%link{:rel => :stylesheet, :type => :"text/css", :href => "css/application.css"}
+
+		:javascript 
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); try { var pageTracker = _gat._getTracker("UA-3517537-9"); pageTracker._trackPageview(); } catch(err) {}
+
+	%header 
+		%h1 MaxKnee.com
+	%body
+		.susy-container
+			#menu 
+				%ul 
+					%li
+						%a{ :href => "about.html"} About
+					%li
+						%a{ :href => "resume.html"} Resume
+					%li  
+						%a{ :href => "blog.html"} Blog
+
+			.main
+				Currently, living in Philadelphia I am a junior web developer at 
+				%a{ :href => "http://www.easternstandard.com"} Eastern Standard
+				%br
+				Interested in all thing web developement and agile. 
