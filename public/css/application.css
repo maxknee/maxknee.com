@@ -23,37 +23,47 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  background-color: #7e7e7e; }
+  background-color: #7e7e7e;
+  padding-bottom: 0.5rem; }
   /* line 12, ../../../../.rvm/gems/ruby-2.1.2/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
   .susy-container:after {
     content: " ";
     display: block;
     clear: both; }
 
-/* line 11, ../../scss/pages/_home.scss */
+/* line 12, ../../scss/pages/_home.scss */
 #menu {
   width: 4.66102%;
   float: left;
   border-right: 1px solid black;
   padding-bottom: 10%; }
-  /* line 20, ../../scss/pages/_home.scss */
+  /* line 21, ../../scss/pages/_home.scss */
   #menu li {
     line-height: 1.5rem; }
-    /* line 23, ../../scss/pages/_home.scss */
+    /* line 24, ../../scss/pages/_home.scss */
     #menu li a {
       padding: 0 5px; }
 
-/* line 29, ../../scss/pages/_home.scss */
+/* line 30, ../../scss/pages/_home.scss */
 .main {
   width: 74.57627%;
   float: left;
   font-size: 1.4rem;
   margin-left: 10px; }
-  /* line 34, ../../scss/pages/_home.scss */
+  /* line 35, ../../scss/pages/_home.scss */
   .main p {
     overflow: hidden;
     *zoom: 1;
     font-size: 1.2rem; }
+
+/* line 41, ../../scss/pages/_home.scss */
+.footer {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-left: 10px;
+  padding-top: 1rem; }
 
 /* line 1, ../../scss/objects/_elements.scss */
 html {
