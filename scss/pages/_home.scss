@@ -1,13 +1,15 @@
+html {
+	background-color: $background-gray;
+}
 .susy-container {
 	@include container;
 	overflow: hidden;
-	background-color: $background-gray;
 	padding-bottom: 0.5rem;
+	@include clearfix;
 }
 
 header {
-	@include clearfix;
-	@include breakpoint($mobile) {
+	@include breakpoint(min-width $mobile, max-width $tablet) {
 	  @include span(12);
 	  content: 'hey';
 	  font-size: 4rem;
@@ -18,24 +20,8 @@ header {
 	@include span(0.75);
 	border-right: 1px solid black;
 	padding-bottom: 10%;
-	
-	@include breakpoint($mobile) {
-		@include span(12);
-		border: none;
-		margin-top: 10px;
-		padding-bottom: 3%;
+	@include clearfix;
 
-		li {
-			@include span(3);
-			margin: auto;
-			a {
-				margin: auto;
-				text-align: center;
-				font-size: 2rem;
-				padding: 0;
-			}
-		}
-	}
 	
 	ul { 
 		@extend %list-reset;
@@ -47,6 +33,27 @@ header {
 
 		a {
 			padding: 0 5px;
+		}
+	}
+
+	@include breakpoint(min-width $mobile, max-width $tablet) {
+		@include span(12);
+		border: none;
+		margin-top: 10px;
+		padding-bottom: 3%;
+		margin-left: 10px;
+
+		li {
+			@include span(3);
+			margin: auto;
+			position: relative;
+
+			a {
+				margin: auto;
+				text-align: center;
+				font-size: 2rem;
+				padding: 0;
+			}
 		}
 	}
 }
