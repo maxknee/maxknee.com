@@ -4,6 +4,10 @@
 /* line 1, ../../scss/objects/_typography.scss */
 h1 {
   font-family: Lato, "Open-Sans", sans-serif; }
+  @media (min-width: 600px) {
+    /* line 1, ../../scss/objects/_typography.scss */
+    h1 {
+      margin: 0; } }
 
 /* line 5, ../../scss/utilities/_mixins.scss */
 #menu ul {
@@ -31,32 +35,68 @@ h1 {
     display: block;
     clear: both; }
 
-/* line 12, ../../scss/pages/_home.scss */
+/* line 8, ../../scss/pages/_home.scss */
+header {
+  overflow: hidden;
+  *zoom: 1; }
+  @media (min-width: 600px) {
+    /* line 8, ../../scss/pages/_home.scss */
+    header {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      content: 'hey';
+      font-size: 4rem; } }
+
+/* line 17, ../../scss/pages/_home.scss */
 #menu {
   width: 4.66102%;
   float: left;
   border-right: 1px solid black;
   padding-bottom: 10%; }
-  /* line 21, ../../scss/pages/_home.scss */
+  @media (min-width: 600px) {
+    /* line 17, ../../scss/pages/_home.scss */
+    #menu {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      border: none;
+      margin-top: 10px;
+      padding-bottom: 3%; }
+      /* line 28, ../../scss/pages/_home.scss */
+      #menu li {
+        width: 23.72881%;
+        float: left;
+        margin: auto; }
+        /* line 31, ../../scss/pages/_home.scss */
+        #menu li a {
+          margin: auto;
+          text-align: center;
+          font-size: 2rem;
+          padding: 0; } }
+  /* line 44, ../../scss/pages/_home.scss */
   #menu li {
+    display: block;
     line-height: 1.5rem; }
-    /* line 24, ../../scss/pages/_home.scss */
+    /* line 48, ../../scss/pages/_home.scss */
     #menu li a {
       padding: 0 5px; }
 
-/* line 30, ../../scss/pages/_home.scss */
+/* line 54, ../../scss/pages/_home.scss */
 .main {
   width: 74.57627%;
   float: left;
   font-size: 1.4rem;
   margin-left: 10px; }
-  /* line 35, ../../scss/pages/_home.scss */
+  /* line 59, ../../scss/pages/_home.scss */
   .main p {
     overflow: hidden;
     *zoom: 1;
     font-size: 1.2rem; }
 
-/* line 41, ../../scss/pages/_home.scss */
+/* line 65, ../../scss/pages/_home.scss */
 .footer {
   width: 100%;
   float: left;

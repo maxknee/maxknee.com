@@ -2,6 +2,7 @@
 
 @import "susy";
 @import "compass";
+@import "breakpoint";
 
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
@@ -26,6 +27,11 @@ $rhythm-unit: "rem";
 
 $base-font-family: $font-stack;
 $font-body:        $font-stack;
+
+// View ports
+$mobile: 600px;
+$tablet: 1024px;
+
 
 // Colors
 

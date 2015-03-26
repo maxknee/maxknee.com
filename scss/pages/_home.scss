@@ -6,7 +6,12 @@
 }
 
 header {
-
+	@include clearfix;
+	@include breakpoint($mobile) {
+	  @include span(12);
+	  content: 'hey';
+	  font-size: 4rem;
+	}
 }
 
 #menu {
@@ -14,11 +19,30 @@ header {
 	border-right: 1px solid black;
 	padding-bottom: 10%;
 	
+	@include breakpoint($mobile) {
+		@include span(12);
+		border: none;
+		margin-top: 10px;
+		padding-bottom: 3%;
+
+		li {
+			@include span(3);
+			margin: auto;
+			a {
+				margin: auto;
+				text-align: center;
+				font-size: 2rem;
+				padding: 0;
+			}
+		}
+	}
+	
 	ul { 
 		@extend %list-reset;
 	}
 	
 	li {
+		display: block;
 		line-height: 1.5rem;
 
 		a {
