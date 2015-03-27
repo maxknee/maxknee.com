@@ -6,9 +6,7 @@ module.exports = function(grunt) {
 				separator: ';'
 			},
 			all: {
-				src: [
-				'js/**/*.js'
-				],
+				src: ['js/vendor/*.js', 'js/app/*.js'],
 				dest: 'public/js/maxknee.js'
 			}
 		},
@@ -47,7 +45,8 @@ module.exports = function(grunt) {
 				nospawn: true
 			},
 			scripts: {
-				files: ['js/**/*.js'],
+				files: ['js/vendor/*.js'],
+				files: ['js/app/*.js'],
 				tasks: ['js-compile']
 			},
 			styles: {
