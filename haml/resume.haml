@@ -1,3 +1,7 @@
+- def render_file(filename)
+	-	contents = File.read(filename)
+	-	Haml::Engine.new(contents).render
+
 !!! 5
 %html
 	%head
@@ -6,21 +10,13 @@
 		
 	.susy-container
 		%header 
-			%h1 MaxKnee.com 
+			= render_file('haml/shared/_header.haml')
 		%body
 			#menu 
-				%ul
-					%li
-						%a{ :href => "index.html"} Home
-					%li
-						%a{ :href => "about.html"} About
-					%li
-						%a{ :href => "resume.html"} Resume
-					%li  
-						%a{ :href => "blog.html"} Blog
+				= render_file('haml/shared/_menu.haml')
 
 			.main
 				Coming soon! 
 
 			.footer 
-				Copyright Max Knee 2015
+				= render_file('haml/shared/_footer.haml')

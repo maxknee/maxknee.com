@@ -13,7 +13,7 @@ ga('send', 'pageview');
 $(document).ready(function() {
 	console.log('hey');
 
-	$('#menu li > a').click(function () {
+	$('#menu li').click(function () {
 		$('header').velocity({scale: 3}, {duration : 3000 });
 	})
 });

@@ -10,6 +10,16 @@ module.exports = function(grunt) {
 				dest: 'public/js/maxknee.js'
 			}
 		},
+		"babel" : {
+			options: {
+				sourceMap: true
+			},
+			dist: {
+				files: {
+					"public/maxknee.js" : "js/app/*.js"
+				}
+			}
+		},
 		haml: {
 			dist: {
 				files: [{
@@ -70,8 +80,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-haml');
-  grunt.registerTask('default', ['bower', 'concat', 'uglify', 'compass', 'haml', 'watch']);
+  grunt.registerTask('default', ['bower', 'concat', 'uglify', 'compass', 'haml', 'watch', 'babel']);
   grunt.registerTask('js-compile', ['concat', 'uglify']);
   grunt.registerTask('css-compile', ['compass']);
-  //grunt.registerTask('watch', ['clean', 'uglify', 'compass', 'haml']);
 };
