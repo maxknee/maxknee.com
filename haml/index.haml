@@ -9,15 +9,28 @@
 		%script(src="js/maxknee.js")
 		
 	.susy-container
-		%header 
+		%header.top-container 
 			%h1 MaxKnee.com 
+			
 		%body
 			#menu 
 				= render_file('haml/shared/_menu.haml')
 
 			.main
-				So Welcome to Maxknee.com. 
-				%p Front End Guy
+				Welcome to Maxknee.com 
+				%p I attempt to make stuff for the web.
+
+				.more-info
+					Cool Stuff happening 
+
+					%a{ :href => '#'} Cool
+
+				.about
+					Currently, living in Philadelphia I am a junior web developer at 
+					%a{ :href => "http://www.easternstandard.com"} Eastern Standard
+					%br
+					Interested in all thing web developement and agile. 
+
 
 			.footer 
 				= render_file('haml/shared/_footer.haml')

@@ -6,10 +6,17 @@ p { margin: 0;}
 
 a {
 	text-decoration: none;
-	color: $orange;
+	color: $red;
 	cursor: pointer;
 	@include transition(all 0.2s ease-in-out);
 	&:hover {
-		color: red;
+		color: $yellow;
 	}
+}
+
+.susy-container {
+	@include container;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 40px;
 }

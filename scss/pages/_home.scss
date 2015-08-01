@@ -8,19 +8,23 @@ html {
 	@include clearfix;
 }
 
-header {
+.top-container {
+  width: 80%;
+  margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
 	@include breakpoint((min-width $mobile) (max-width $tablet)) {
-	  @include span(12);
-	  content: 'hey';
 	  font-size: 4rem;
 	}
 }
 
 #menu {
-	@include span(0.9);
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 	padding-right: 10px;
-	border-right: 1px solid black;
-	padding-bottom: 10%;
+	padding-bottom: 2rem;
 	@include clearfix;
 	
 	ul { 
@@ -28,8 +32,10 @@ header {
 	}
 	
 	li {
-		display: block;
+		display: inline-block;
+		text-align: center;
 		line-height: 1.5rem;
+		width: 20%;
 
 		a {
 			padding: 0 5px;
@@ -62,9 +68,11 @@ header {
 }
 
 .main {
-	@include span(9);
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 	font-size: 1.4rem;
-	margin-left: 10px;
+	display: block;
 
 	p {
 		@include clearfix;
@@ -72,9 +80,19 @@ header {
 	}
 }
 
+.more-info {
+}
+
+.about {
+
+}
+
+
+
 .footer {
-	@include span(12);
-	margin-left: 10px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 1rem;
 }
 

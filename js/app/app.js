@@ -11,11 +11,10 @@ ga('send', 'pageview');
 //Jquery 
 
 $(document).ready(function() {
-	console.log('hey');
-
 	$('#menu li').click(function () {
-		$('header').velocity({scale: 3}, {duration : 3000 });
+		$('header').velocity({scale: 2}, {duration : 1000 });
+		setTimeout(function() {
+			$('header').velocity({scale: 1}, {duration : 1000});
+		}, 10);
 	})
 });
-
-

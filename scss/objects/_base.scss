@@ -36,8 +36,13 @@ $tablet: 1024px;
 
 // Colors
 
-$background-gray: 	rgba(126, 126, 126, 1.0);
+$background-gray: 	rgba(120, 122, 126, 1.0);
 $orange: 						#fba32a;
+$green:							#79BD8F;
+$dark-green:				#00A388;
+$light-green:				#BEEB9F;
+$yellow:						#FFFF9D;
+$red:								#FF6138;
 
 @import "compass/support";  // Add Compass' IE and vendor prefix support variables.
 @import "compass/utilities/general/clearfix"; // Better than Drupal's clearfix.
