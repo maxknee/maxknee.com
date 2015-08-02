@@ -101,27 +101,28 @@ html {
 .top-content {
   border: 1px solid #FFFF9D;
   margin: 20px -20px;
-  padding: 20px; }
+  padding: 20px;
+  text-align: center; }
 
-/* line 80, ../../scss/pages/_home.scss */
+/* line 81, ../../scss/pages/_home.scss */
 .about {
   border: 1px solid #79BD8F;
   margin: 20px -20px;
   padding: 20px; }
 
-/* line 84, ../../scss/pages/_home.scss */
+/* line 85, ../../scss/pages/_home.scss */
 .resume {
   border: 1px solid #00A388;
   margin: 20px -20px;
   padding: 20px; }
 
-/* line 88, ../../scss/pages/_home.scss */
+/* line 89, ../../scss/pages/_home.scss */
 .links {
   border: 1px solid #BEEB9F;
   margin: 20px -20px;
   padding: 20px; }
 
-/* line 92, ../../scss/pages/_home.scss */
+/* line 93, ../../scss/pages/_home.scss */
 .footer {
   width: 80%;
   margin-left: auto;
