@@ -5,31 +5,54 @@
 !!! 5
 %html
 	%head
+		%title Max Knee 
+		%meta{ :content => "Max Knee", :name => "author" }
+		%meta{ :content => "Max Knee, a web developer in Philadelphia. Javascript, Drupal, PHP, HTML, CSS", :name => "description" }
+		%meta{ :content => "Javascript, HTML, CSS, Node, SASS, Web Development, Agile, Digital Agency", :name => "keyword"}
 		%link{:rel => :stylesheet, :type => :"text/css", :href => "css/application.css"}
 		%script(src="js/maxknee.js")
-		
-	.susy-container
-		%header.top-container 
-			%h1 MaxKnee.com 
-			
 		%body
-			#menu 
-				= render_file('haml/shared/_menu.haml')
+		.susy-container
+			%header.top-container 
+				%h1 MaxKnee.com 
+				#menu 
+					= render_file('haml/shared/_menu.haml')
 
-			.main
-				Welcome to Maxknee.com 
-				%p I attempt to make stuff for the web.
+				.main#main
 
-				.more-info
-					Cool Stuff happening 
+				.top-content 
+					Welcome to Maxknee.com 
+					%p I attempt to make stuff for the web.
+					%p You can email me at maxknee (at) gmail (dot) com
 
-					%a{ :href => '#'} Cool
+					%p
+						Cool Stuff happening 
 
-				.about
+				.about#about
 					Currently, living in Philadelphia I am a junior web developer at 
 					%a{ :href => "http://www.easternstandard.com"} Eastern Standard
 					%br
-					Interested in all thing web developement and agile. 
+					Interested in all things web developement.
+
+				.resume#resume 
+					%p
+						After spending a few years doing corprate IT at Comcast, I was able to chnage my career and start as a web developer at Eastern Standard. That was in October 2014. 
+						At Eastern Standard, I am a full stack developer doing themeing and building of Drupal sites for our clients.
+
+					%br
+					%p
+						We take into account interaction, usability, responsive, and accessability for all the sites we build. 
+					%br
+					%p
+						At Eastern Standard, our processes include Node and NPM as our build tools, SASS, along with different Javascript libraries depening on use case. 
+					%br
+					%p
+						Since being there, I feel that I have grown a lot as a developer, leveraging my problem solving skills when it comes to building web sites. I am now more comfortable with ES6 and creating modules and function calls. Also never being exposed to PHP and how Drupal really works, I can now build a site with more ease. 
+					%br
+					%p
+						The best part about the work I do and where I work is being able to use and leverage new technologies and learn about all the new ideas in web development that are out there. 
+
+				.links#links 
 
 
 			.footer 
