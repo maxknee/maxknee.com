@@ -20,7 +20,7 @@ h1 {
 
 /* line 1, ../../scss/pages/_home.scss */
 html {
-  background-color: #787a7e; }
+  background-color: #e0e0e0; }
 
 /* line 4, ../../scss/pages/_home.scss */
 .susy-container {
@@ -44,12 +44,8 @@ html {
   margin-left: auto;
   margin-right: auto;
   text-align: center; }
-  @media (min-width: 600px) and (max-width: 1024px) {
-    /* line 11, ../../scss/pages/_home.scss */
-    .top-container {
-      font-size: 4rem; } }
 
-/* line 22, ../../scss/pages/_home.scss */
+/* line 18, ../../scss/pages/_home.scss */
 #menu {
   width: 80%;
   margin-left: auto;
@@ -58,17 +54,17 @@ html {
   padding-bottom: 2rem;
   overflow: hidden;
   *zoom: 1; }
-  /* line 34, ../../scss/pages/_home.scss */
+  /* line 30, ../../scss/pages/_home.scss */
   #menu li {
     display: inline-block;
     text-align: center;
     line-height: 1.5rem;
     width: 20%; }
-    /* line 40, ../../scss/pages/_home.scss */
+    /* line 36, ../../scss/pages/_home.scss */
     #menu li a {
       padding: 0 5px; }
   @media (min-width: 600px) and (max-width: 1024px) {
-    /* line 22, ../../scss/pages/_home.scss */
+    /* line 18, ../../scss/pages/_home.scss */
     #menu {
       width: 100%;
       float: left;
@@ -81,31 +77,49 @@ html {
       padding: 5px 0;
       border-top: 1px solid black;
       border-bottom: 1px solid black; }
-      /* line 55, ../../scss/pages/_home.scss */
+      /* line 51, ../../scss/pages/_home.scss */
       #menu li {
         width: 23.72881%;
         float: left;
         margin: auto;
         position: relative; }
-        /* line 60, ../../scss/pages/_home.scss */
+        /* line 56, ../../scss/pages/_home.scss */
         #menu li a {
           margin: auto;
           text-align: center;
           font-size: 2rem;
           padding: 0; } }
 
-/* line 70, ../../scss/pages/_home.scss */
+/* line 66, ../../scss/pages/_home.scss */
 .main {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.4rem;
   display: block; }
-  /* line 77, ../../scss/pages/_home.scss */
-  .main p {
-    overflow: hidden;
-    *zoom: 1;
-    font-size: 1.2rem; }
+
+/* line 74, ../../scss/pages/_home.scss */
+.top-content {
+  border: 1px solid #FFFF9D;
+  margin: 20px -20px;
+  padding: 20px; }
+
+/* line 80, ../../scss/pages/_home.scss */
+.about {
+  border: 1px solid #79BD8F;
+  margin: 20px -20px;
+  padding: 20px; }
+
+/* line 84, ../../scss/pages/_home.scss */
+.resume {
+  border: 1px solid #00A388;
+  margin: 20px -20px;
+  padding: 20px; }
+
+/* line 88, ../../scss/pages/_home.scss */
+.links {
+  border: 1px solid #BEEB9F;
+  margin: 20px -20px;
+  padding: 20px; }
 
 /* line 92, ../../scss/pages/_home.scss */
 .footer {
@@ -115,14 +129,15 @@ html {
   padding-top: 1rem; }
 
 /* line 1, ../../scss/objects/_elements.scss */
-html {
-  font-family: Lato, "Open-Sans", sans-serif; }
+body {
+  font-family: Lato, "Open-Sans", sans-serif;
+  font-size: 1.6rem; }
 
-/* line 5, ../../scss/objects/_elements.scss */
+/* line 6, ../../scss/objects/_elements.scss */
 p {
   margin: 0; }
 
-/* line 7, ../../scss/objects/_elements.scss */
+/* line 8, ../../scss/objects/_elements.scss */
 a {
   text-decoration: none;
   color: #FF6138;
@@ -131,11 +146,11 @@ a {
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
-  /* line 12, ../../scss/objects/_elements.scss */
+  /* line 13, ../../scss/objects/_elements.scss */
   a:hover {
     color: #FFFF9D; }
 
-/* line 17, ../../scss/objects/_elements.scss */
+/* line 18, ../../scss/objects/_elements.scss */
 .susy-container {
   max-width: 1200px;
   max-width: 120rem;
