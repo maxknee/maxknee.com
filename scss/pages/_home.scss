@@ -73,6 +73,7 @@ html {
 
 .top-content {
 	@include content-box($yellow);
+	text-align: center;
 }
 
 
