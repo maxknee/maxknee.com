@@ -12,9 +12,9 @@ ga('send', 'pageview');
 
 $(document).ready(function() {
 	$('#menu li').click(function () {
-		$('header').velocity({scale: 2}, {duration : 1000 });
+		$('.main').velocity({scale: 2}, {duration : 1000 });
 		setTimeout(function() {
-			$('header').velocity({scale: 1}, {duration : 1000});
+			$('.main').velocity({scale: 1}, {duration : 1000});
 		}, 10);
 	})
 });
