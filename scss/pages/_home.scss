@@ -13,10 +13,6 @@ html {
   margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	
-	@include breakpoint((min-width $mobile) (max-width $tablet)) {
-	  font-size: 4rem;
-	}
 }
 
 #menu {
@@ -71,23 +67,27 @@ html {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 1.4rem;
 	display: block;
 
-	p {
-		@include clearfix;
-		font-size: 1.2rem;
-	}
 }
 
-.more-info {
+.top-content {
+	@include content-box($yellow);
 }
+
+
 
 .about {
-
+	@include content-box($green);
 }
 
+.resume {
+	@include content-box($dark-green);
+}
 
+.links {
+	@include content-box($light-green);
+}
 
 .footer {
 	width: 80%;
