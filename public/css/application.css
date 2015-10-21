@@ -104,25 +104,25 @@ html {
   padding: 20px;
   text-align: center; }
 
-/* line 81, ../../scss/pages/_home.scss */
+/* line 79, ../../scss/pages/_home.scss */
 .about {
   border: 1px solid #79BD8F;
   margin: 20px -20px;
   padding: 20px; }
 
-/* line 85, ../../scss/pages/_home.scss */
+/* line 83, ../../scss/pages/_home.scss */
 .resume {
   border: 1px solid #00A388;
   margin: 20px -20px;
   padding: 20px; }
 
-/* line 89, ../../scss/pages/_home.scss */
+/* line 87, ../../scss/pages/_home.scss */
 .links {
-  border: 1px solid #BEEB9F;
+  border: 1px solid #6DAFFF;
   margin: 20px -20px;
   padding: 20px; }
 
-/* line 93, ../../scss/pages/_home.scss */
+/* line 91, ../../scss/pages/_home.scss */
 .footer {
   width: 80%;
   margin-left: auto;

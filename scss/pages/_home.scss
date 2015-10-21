@@ -76,8 +76,6 @@ html {
 	text-align: center;
 }
 
-
-
 .about {
 	@include content-box($green);
 }
@@ -87,7 +85,7 @@ html {
 }
 
 .links {
-	@include content-box($light-green);
+	@include content-box($light-blue);
 }
 
 .footer {
