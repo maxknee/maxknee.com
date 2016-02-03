@@ -2,3 +2,6 @@
 **.sass-cache/*
 .sass-cach
 **.DS_Store
+*node_modules/*
+node_modules/
+/node_modules
